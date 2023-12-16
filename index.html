@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash App Generator</title>
+    <meta name="description" content="Cash App Generator"/>
+    <meta property="og:title" content="Cash App Generator"/>
+    <meta property="og:description" content="Cash App Generator"/>
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cash App Generator</title>
+    <center>
+    <img src="https://d266key948fg17.cloudfront.net/uploads/1601679458ca239b294e26b16c00c564d78ac096af.png" class="logo">
+    <div class="main" id="main">
+      <div class="step">
+        <div class="step-icon"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width: 50px;"></div>
+      </div>
+      <div class="step1" id="step1" style="Display:1none">
+        <div class="step1-text"><b>Please enter your Cash App Username/ID or Email and select your platform.</b></div>
+        <br>
+        <div class="inputbox">
+          <img src="https://d266key948fg17.cloudfront.net/uploads/1636471537cc9c306f7c389c185189bf3daf7260c1.png" class="username-icon">
+          <input class="u-i"  placeholder="@Cashtag"  id="uid" >
+        </div>
+        <label class="protection" >Encrypted Protection
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+        </label>
+        <div class="bnt" id="proStep1" onclick="proStep1()">Proceed</div>
+        <div class="trademark">Â© Copyright, all rights reserved.
+          All trademarks, service marks, trade names, trade dress, product names and logos appearing on the site are the property of their respective owners.
+        </div>
+      </div>
+      <div class="step2" id="step2" style="Display:none">
+        <div class="seaching-text">
+          Searching-User....
+        </div>
+        <br>
+        <div class="searching-box" id="search-name">
+          Name
+        </div>
+      </div>
+      <div class="step3" id="step3" style="Display:none">
+        <div class="userfound-text">
+          USER FOUND!
+        </div>
+        <br>
+        <img src="https://d266key948fg17.cloudfront.net/uploads/1636472786ee1905a53e0b903bb72600a288d20d03.png" class="imgcheck">
+      </div>
+    </div>
+    <div class="main" id="main2" style="Display:none">
+      <div class="step">
+        <div class="step-icon"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width: 50px;"></div>
+      </div>
+      <div class="step1">
+        <div class="step1-text"><b>Please select the amount of $</b></div>
+        <br>
+        <div class="SelectedAmount-box">
+          <div class="SelectedAmount-box-text"><span style="background-color: #46D138;
+            font-size: 12px;
+            color: white;
+            padding: 5px;
+            border-radius: 40px;
+            border-style: dotted;
+            border-color: white;
+            border-width: 3px;
+            box-shadow: 0 0 4px var(--boxshadow1);
+            ">SELECTED AMOUNT</span></div>
+          <img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width:60px;margin-top:25px;">
+          <div class="AmountSelected-text" id="test">
+            <span class="gemstext" id="selected-gems-text" style="font-size: 24px;
+              font-weight: 900;">50</span>
+            <span style="font-size: 16px;">$</span>
+          </div>
+          <div class="gems-Amount-Selected" id="gemsAmountSelected1" onclick="gemsAmountSelected(&#39;gemsAmountSelected1&#39;,&#39;50 &#39;)"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width:25px;margin-bottom: -7px;"> <span style="font-size: 16px;font-weight: bold;">50</span><span style="font-size: 14px;"> $</span> </div>
+          <div class="gems-Amount" id="gemsAmountSelected2" onclick="gemsAmountSelected(&#39;gemsAmountSelected2&#39;,&#39;100 &#39;)"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width:25px;margin-bottom: -7px;"> <span style="font-size: 16px;font-weight: bold;">100</span><span style="font-size: 14px;"> $</span> </div>
+          <div class="gems-Amount" id="gemsAmountSelected3" onclick="gemsAmountSelected(&#39;gemsAmountSelected3&#39;,&#39;150 &#39;)"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width:25px;margin-bottom: -7px;"> <span style="font-size: 16px;font-weight: bold;">150</span><span style="font-size: 14px;"> $</span> </div>
+          <div class="gems-Amount" id="gemsAmountSelected4" onclick="gemsAmountSelected(&#39;gemsAmountSelected4&#39;,&#39;200 &#39;)"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width:25px;margin-bottom: -7px;"> <span style="font-size: 16px;font-weight: bold;">200</span><span style="font-size: 14px;"> $</span> </div>
+        </div>
+        <div class="bnt2" onclick="proStep2()">Proceed</div>
+      </div>
+    </div>
+    <div class="main3" id="main3" style="display:none">
+      <div class="step">
+        <div class="step-icon"><img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" style="width: 50px;"></div>
+      </div>
+      <img src="https://d266key948fg17.cloudfront.net/uploads/1635653021ac61a7aa31f58b94c30339f142fa4242.png" class="setting-icon" style="width:150px;filter: invert(30%);">
+      <div class="step1-text" id="loading-step">Loading...</div>
+      <div class="pro-bg">
+        <div class="pro-bar" id="pro-bar">
+        </div>
+      </div>
+      <img src="https://d266key948fg17.cloudfront.net/uploads/163542468278c021e06cc778d4aef36f80e47413a2.gif" style="width:25px;display:none;margin-top:20px" id="sloading" class="sloading">
+    </div>
+    <div id="gems-gen" class="gemsgenanimation" style="display:none">
+      <div class="main4" id="main4" style="display:1none">
+        <img src="https://d266key948fg17.cloudfront.net/uploads/163542468278c021e06cc778d4aef36f80e47413a2.gif" id="settingicon" class="setting-icon" style="width:20px;position:absolute; right:3px;top:3px">
+        <img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" id="gemsicon" style="  width:70px;
+          margin-top:10px;">
+        <div class="gemsgen" id="gemsgen">0</div>
+        <span id="genname" class="gemsgenname">name</span>
+      </div>
+    </div>
+    <div class="main5" id="main5" style="display:none">
+      <div class="step">
+        <div class="step-icon">    <img src=""  id="sloading" class="sloading"></div>
+      </div>
+      <div class="step1-text" ><b>Last Step</b></div>
+      <div style="margin-top:10px;" class="text-lastStep">
+        Hello <span id="lastStep-name" style="    font-size: 22px;
+          color: #6FFF5F ;
+          font-weight: 700;"></span>! You are almost done. <span id="lastStep-gems" style="  font-size: 20px;
+          color: #6FFF5F ;
+          font-weight: 700;"></span> Will be added to your account ! Please complete the last step by click the button below.
+      </div>
+      <div class="lastStep-card">
+        <img src="https://d266key948fg17.cloudfront.net/uploads/16348770448f7dcdea1b51ec4ab1d97b5a8abd5dc0.png" id="gemsicon" style="  width:70px;
+          margin-top:10px;">
+        <div class="gemsgen" id="lastStep-gems2">0
+        </div>
+        <span id="lastStep-name2" class="gemsgenname">name</span>
+      </div>
+      <div class="bnt3" onclick="_lI()"><b>Verify Now</b></div>
+    </div>
+    <div class="ads">
+    </div>
+    <div class="jos">
+    </div>
+      <script src="style.js"></script>
+  </body>
+</html>
