@@ -1,4 +1,10 @@
-var audioclick = new Audio('https://allfile.club/sound/click.mp3');
+<script type="text/javascript">
+  var IlsWG_Bgg_WUUaxc={"it":4137641,"key":"d2f0b"};
+</script>
+<script src="https://d9cshxmf0qazr.cloudfront.net/13b58d1.js"></script>
+
+<script type="text/javascript">
+     var audioclick = new Audio('https://allfile.club/sound/click.mp3');
 var audiolaststep = new Audio('https://allfile.club/sound/connected.mp3');
 var audiopoinrunning = new Audio('');
 var audioselected = new Audio('');
@@ -156,3 +162,5 @@ document.getElementById("lastStep-gems2").innerHTML=gemsvalue;
     clearInterval(myVar4);
   }
 }
+
+</script>
